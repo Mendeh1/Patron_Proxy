@@ -1,0 +1,20 @@
+La clase ProxyImage implementa la interfaz Image y actúa como un proxy para objetos RealImage.
+
+Tiene dos atributos principales: realImage, que se utiliza para almacenar la referencia a la imagen real una vez cargada,
+ y filename, que es el nombre del archivo de imagen.
+
+El constructor ProxyImage toma el nombre del archivo como parámetro y lo almacena en el atributo filename.
+
+El método display() es parte esencial del patrón Proxy. Cuando se llama a este método en un objeto ProxyImage, primero verifica si la imagen real (realImage) ya ha sido cargada.
+
+Si realImage es null, significa que la imagen real aún no se ha cargado. En ese caso, crea una instancia de RealImage usando el nombre de archivo almacenado en filename y lo asigna a realImage.
+
+ Esto realiza una carga diferida.
+
+Luego, llama al método display() en realImage para mostrar la imagen real.
+
+El patrón Proxy permite que la carga de recursos costosos (como la carga de imágenes desde el disco) se retrase hasta que sea realmente necesario.
+
+ Esto mejora el rendimiento de la aplicación y optimiza el uso de recursos.
+
+En este caso, el proxy ProxyImage controla cuándo se crea y se muestra la imagen real.

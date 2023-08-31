@@ -1,0 +1,6 @@
+Proxy es un patrón de diseño estructural que te permite proporcionar un sustituto o marcador de posición para otro objeto.
+Un proxy controla el acceso al objeto original, permitiéndote hacer algo antes o después de que la solicitud llegue al objeto original.
+El patrón de diseño Proxy se utiliza para proporcionar un objeto representante (proxy) que actúa como intermediario para controlar el acceso a otro objeto.
+Esto puede ser útil en situaciones donde se necesita controlar el acceso a un objeto por razones de seguridad, rendimiento, carga diferida, entre otras.
+Supongamos que tienes una interfaz que representa la carga de imágenes, y quieres implementar un proxy para controlar el acceso a objetos.
+El proxy debera cargará la imagen real solo cuando sea necesario y proporcionará ciertas funciones adicionale.
